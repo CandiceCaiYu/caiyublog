@@ -21,5 +21,12 @@ pipeline {
         sh 'echo "This is test stage"'
       }
     }
+    stage('deliver') {
+      steps {
+        sh 'echo "This is Deliver stage"'
+        input message 'Finished using the web site?(Click "Proceed" to continue)'
+        sh 'echo "----end----"'
+      }
+    }
   }
 }
