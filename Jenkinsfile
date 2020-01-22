@@ -12,7 +12,7 @@ pipeline {
   stages {
     stage('build') {
       steps {
-        sh 'echo "Hello World 1-16-task-demo"'
+        sh 'echo "Hello World 1-16-task-demo-2"'
         sh 'yarn install'
       }
     }
@@ -24,7 +24,7 @@ pipeline {
     stage('deliver') {
       steps {
         sh 'echo "This is Deliver stage"'
-        input message: 'Finished using the web site?(Click "确认" to continue)'
+        input message: 'Finished using the web site?(Click "Proceed" to continue)'
         sh 'echo "----end----"'
       }
     }
