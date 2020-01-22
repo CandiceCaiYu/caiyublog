@@ -13,7 +13,7 @@ pipeline {
     stage('build') {
       steps {
         sh 'echo "Hello World 1-16-task-demo"'
-        sh 'npm install'
+        sh 'yarn install'
       }
     }
     stage('test'){
