@@ -3,6 +3,7 @@ import PersonInfo from '@views/PersonInfo'
 import Tags from '@views/Tags'
 import Content from '@views/Content'
 import Header from '@views/Header'
+
 export default {
   render() {
     return (
@@ -15,5 +16,5 @@ export default {
         </div>
       </div>
     )
-  }
+  },
 }

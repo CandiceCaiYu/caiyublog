@@ -1,5 +1,6 @@
 import './index.less'
 import avator from '@src/assets/avator.png'
+
 export default {
   render() {
     return (
@@ -10,5 +11,5 @@ export default {
         <p>932475428@qq.com</p>
       </div>
     )
-  }
+  },
 }
