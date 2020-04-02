@@ -2,7 +2,6 @@ import './index.less'
 import {map} from 'lodash'
 import { allTags } from '@src/constant/tags'
 import { defaultColors } from '@src/constant/common'
-console.log('defaultColors', defaultColors)
 export default {
   render() {
     return (
