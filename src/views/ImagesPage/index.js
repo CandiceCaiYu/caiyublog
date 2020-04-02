@@ -61,7 +61,7 @@ export default {
               <li
                 onclick={this.handleTabChange(key)}
                 class="preview-image__right-tabs-item"
-                style={this.activeName === value.value ? { background: '#a9a1a1' } : { background: '#ccc' }}>{value.name}</li>
+                style={this.activeName === value.value ? { background: '#000' } : { background: '#524343' }}>{value.name}</li>
             ))}
           </ul>
           <div class="preview-image__right-main-content">
