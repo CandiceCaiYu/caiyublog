@@ -15,6 +15,7 @@ export default {
     margin: 0;
     padding:0;
     color:#333;
+    font-size: 14px;
   }
   ul,li {
     list-style: none;
