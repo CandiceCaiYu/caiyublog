@@ -16,4 +16,9 @@ export default {
     padding:0;
     color:#333;
   }
+  ul,li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
 </style>

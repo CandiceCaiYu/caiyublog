@@ -1,5 +1,6 @@
 import './index.less'
 import PersonInfo from '@views/PersonInfo'
+import Tags from '@views/Tags'
 export default {
   render() {
     return (
@@ -10,7 +11,9 @@ export default {
             <PersonInfo />
           </div>
           <div class="main-content"></div>
-          <div class="main-right"></div>
+          <div class="main-right">
+            <Tags />
+          </div>
         </div>
       </div>
     )
