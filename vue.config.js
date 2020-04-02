@@ -1,7 +1,4 @@
 const path = require('path')
-function resolve(dir) {
-  return path.join(__dirname, dir)
-}
 module.exports = {
   outputDir: 'dist',
   assetsDir: 'assets',
@@ -13,12 +10,4 @@ module.exports = {
       '@comp' : path.resolve(__dirname, './src/components')
     }
   },
-  css: {
-    requireModuleExtension: false,
-    loaderOptions: {
-      less: {
-        includePaths: [resolve('./src')]
-      }
-    }
-  }
 }

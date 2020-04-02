@@ -1,4 +1,22 @@
 .home {
-  background: #000;
-  color: #fff
+  height: 100%;
+  color: #fff;
+  .header {
+    height: 48px;
+    width: 100%;
+    border-bottom: 1px solid #ccc;
+  }
+  .main {
+    height: calc(100% - 49px);
+    display: flex;
+    .main-left,
+    .main-right {
+      width: 180px;
+    }
+    .main-content {
+      flex: 1;
+      border-left: 1px solid #ccc;
+      border-right: 1px solid #ccc;
+    }
+  }
 }
