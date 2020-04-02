@@ -19,7 +19,7 @@ module.exports = {
   plugins: ['vue'],
   rules: {
     // allow debugger during development
-    'no-console': 1,
+    'no-console': 0,
     'no-debugger': process.env.CI === 'true' ? 'error' : 'off',
     // vue disable rules
     'vue/require-prop-types': 0,

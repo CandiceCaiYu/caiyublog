@@ -1,13 +1,13 @@
 
-import { map, parseInt, min, indexOf } from 'lodash'
 import { IMGTYPE } from '@src/constant/images'
+import { map, parseInt, min, indexOf } from 'lodash'
 import Content from './Content'
 import './index.less'
 
 export default {
   data() {
     return {
-      activeName: IMGTYPE.JSS.key,
+      activeName: IMGTYPE.Columns.key,
       defaultWidth: 250,
       gap: 10,
     }
@@ -43,12 +43,14 @@ export default {
     },
   },
   created() {
-    window.onload = () => {
-      this.handleImageLayout()
-    }
     window.onresize = () => {
       this.handleImageLayout()
     }
+  },
+  mounted() {
+    this.$nextTick(() => {
+      this.handleImageLayout()
+    })
   },
   render() {
     return (
