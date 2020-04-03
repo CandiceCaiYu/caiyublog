@@ -16,7 +16,7 @@ export default {
     handleCurrentTime() {
       const date = moment().format('YYYY-MM-DD HH:mm:ss')
       const week = moment().format('d')
-      const weeks = ['一', '二', '三', '四', '五', '六', '日' ]
+      const weeks = ['一', '二', '三', '四', '五', '六', '日']
       this.currentTime = `${date} 星期${weeks[week - 1]}`
     },
   },
